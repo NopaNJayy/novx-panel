@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>NovX Panel</title>
+<meta name="description" content="NovX Panel - Premium Gaming Tools">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="splash" id="splash" onclick="closeSplash()">
+<div class="splash-bg">
+<div class="lightning"></div><div class="lightning"></div><div class="lightning"></div><div class="lightning"></div>
+<div class="thunder-flash"></div>
+</div>
+<div class="splash-horse-wrap">
+<div class="splash-ring"></div>
+<div class="splash-ring2"></div>
+<img src="horse.png" alt="NovX" class="splash-horse">
+</div>
+<div class="splash-title">NOVX PANEL</div>
+<div class="splash-sub">PREMIUM GAMING TOOLS</div>
+<div class="splash-hint">TAP ANYWHERE TO ENTER</div>
+</div>
+<canvas id="bg-canvas"></canvas>
+<div class="status-badge"><span class="dot"></span> SERVER ONLINE</div>
+<nav id="nav"><div class="nav-inner">
+<a href="#home" class="brand"><span>NOVX</span></a>
+<ul class="nav-menu">
+<li><a href="#home" class="active">Home</a></li>
+<li><a href="#items">Items</a></li>
+<li><a href="#why">Features</a></li>
+<li><a href="#download">Download</a></li>
+</ul>
+<div class="nav-actions"><a href="https://discord.gg/wHMRcR38D" target="_blank" class="btn-discord-nav">💬 Discord</a></div>
+</div></nav>
+<section id="home" class="hero"><div class="hero-inner">
+<div class="hero-badge"><span class="dot"></span> ACTIVE & UNDETECTED</div>
+<h1><span class="gr">NovX Panel</span><br>Next-Gen Gaming Tools</h1>
+<p>Panel & ESP dengan performa ultra-rendah latensi. Aman, stabil, dan selalu terupdate.</p>
+<div class="hero-btns">
+<a href="#items" class="btn btn-glow">⚡ Lihat Item</a>
+<a href="https://discord.gg/wHMRcR38D" target="_blank" class="btn btn-ghost">💬 Join Discord</a>
+</div>
+</div></section>
+<section id="items" class="section"><div class="section-inner">
+<h2 class="sec-title">NOVX ITEM</h2>
+<p class="sec-sub">Pilih tools yang sesuai kebutuhanmu.</p>
+<div class="items-grid">
+<div class="item-card reveal"><span class="item-tag">Panel</span>
+<h3>Panel V1</h3>
+<div class="sys-info">🖥 Web (IPV4) · Windows 10/11</div>
+<div class="feat-group"><h4>🎯 AIM</h4><div class="feat-chips"><span class="feat-chip">Head</span><span class="feat-chip">Neck</span><span class="feat-chip">Drag</span></div></div>
+<div class="feat-group"><h4>👁️ VISUALS</h4><div class="feat-chips"><span class="feat-chip">ESP Menu</span></div></div>
+<div class="feat-group"><h4>💎 SPECIAL</h4><div class="feat-chips"><span class="feat-chip">Auto On</span><span class="feat-chip">Hidden Startup</span><span class="feat-chip">Hidden Processes</span><span class="feat-chip">Deep Clean</span></div></div>
+<div class="price-table">
+<div class="price-row"><span class="dur">1 Day</span><span class="amt">Rp5.000</span></div>
+<div class="price-row"><span class="dur">3 Day</span><span class="amt">Rp15.000</span></div>
+<div class="price-row"><span class="dur">7 Day</span><span class="amt">Rp30.000</span></div>
+<div class="price-row"><span class="dur">30 Day</span><span class="amt">Rp100.000</span></div>
+<div class="price-row"><span class="dur">Lifetime</span><span class="amt">Rp300.000</span></div>
+</div>
+<button class="btn-buy" onclick="buyItem('Panel V1')">🎟️ Beli via Ticket</button>
+</div>
+<div class="item-card reveal"><span class="item-tag">Panel</span>
+<h3>Panel V2</h3>
+<div class="sys-info">☁️ Web (Cloudflare) · Windows 10/11</div>
+<div class="feat-group"><h4>🎯 AIM</h4><div class="feat-chips"><span class="feat-chip">Head</span><span class="feat-chip">Neck</span><span class="feat-chip">Drag</span></div></div>
+<div class="feat-group"><h4>👁️ VISUALS</h4><div class="feat-chips"><span class="feat-chip">ESP Menu</span></div></div>
+<div class="feat-group"><h4>💎 SPECIAL</h4><div class="feat-chips"><span class="feat-chip">Keybind</span><span class="feat-chip">Auto On</span><span class="feat-chip">Hidden Startup</span><span class="feat-chip">Hidden Processes</span><span class="feat-chip">Deep Clean</span></div></div>
+<div class="price-table">
+<div class="price-row"><span class="dur">1 Day</span><span class="amt">Rp7.000</span></div>
+<div class="price-row"><span class="dur">3 Day</span><span class="amt">Rp20.000</span></div>
+<div class="price-row"><span class="dur">7 Day</span><span class="amt">Rp30.000</span></div>
+<div class="price-row"><span class="dur">30 Day</span><span class="amt">Rp120.000</span></div>
+<div class="price-row"><span class="dur">Lifetime</span><span class="amt">Rp320.000</span></div>
+</div>
+<button class="btn-buy" onclick="buyItem('Panel V2')">🎟️ Beli via Ticket</button>
+</div>
+<div class="item-card reveal"><span class="item-tag">Visual</span>
+<h3>NovX ESP</h3>
+<div class="sys-info">🖥 Windows 10/11</div>
+<div class="feat-group"><h4>🔹 VISUAL</h4><div class="feat-chips"><span class="feat-chip">ESP Line</span><span class="feat-chip">ESP Box</span><span class="feat-chip">Name & Distance</span><span class="feat-chip">Health</span><span class="feat-chip">Warning</span></div></div>
+<div class="feat-group"><h4>⚙️ SETTINGS</h4><div class="feat-chips"><span class="feat-chip">Streamer Mode</span><span class="feat-chip">Hide Menu</span><span class="feat-chip">Save Settings</span></div></div>
+<div class="price-table">
+<div class="price-row"><span class="dur">1 Day</span><span class="amt">Rp3.000</span></div>
+<div class="price-row"><span class="dur">3 Day</span><span class="amt">Rp6.000</span></div>
+<div class="price-row"><span class="dur">7 Day</span><span class="amt">Rp10.000</span></div>
+<div class="price-row"><span class="dur">30 Day</span><span class="amt">Rp30.000</span></div>
+<div class="price-row"><span class="dur">Lifetime</span><span class="amt">Rp100.000</span></div>
+</div>
+<button class="btn-buy" onclick="buyItem('NovX ESP')">🎟️ Beli via Ticket</button>
+</div>
+</div>
+</div></section>
+<section id="why" class="section"><div class="section-inner">
+<h2 class="sec-title">KENAPA NOVX?</h2>
+<p class="sec-sub">Teknologi terdepan untuk pengalaman terbaik.</p>
+<div class="feat-cards">
+<div class="feat-box reveal"><div class="ico">⚡</div><h3>Ultra-Low Latency</h3><p>Respon instan tanpa delay. Dirancang untuk performa kompetitif.</p></div>
+<div class="feat-box reveal"><div class="ico">🛡️</div><h3>Undetected</h3><p>Sistem keamanan berlapis. Hidden processes & deep clean otomatis.</p></div>
+<div class="feat-box reveal"><div class="ico">🔄</div><h3>Auto Update</h3><p>Selalu terupdate setiap pergantian OBB. Tanpa ribet.</p></div>
+</div>
+</div></section>
+<section id="download" class="section"><div class="section-inner">
+<div class="cta-card reveal"><div class="cta-icon">📥</div><h2>Download Free Fire</h2><p>Dapatkan APK FF terbaru langsung dari sini.</p><a href="#" class="btn-dl">⬇️ Download</a></div>
+<div class="dc-cta"><div class="cta-card reveal"><div class="cta-icon">💬</div><h2>Gabung Discord</h2><p>Update terbaru, bantuan langsung, dan komunitas eksklusif.</p><a href="https://discord.gg/wHMRcR38D" target="_blank" class="btn-dc">💬 Join Discord</a></div></div>
+</div></section>
+<footer><div class="foot-brand"><span>NOVX</span> PANEL</div><p>Premium Gaming Tools by NovX</p><div class="copy">&copy; 2026 NovX Panel. All rights reserved.</div></footer>
+<div class="modal-bg dc-prompt" id="dc-prompt"><div class="modal-box">
+<div class="dc-ico">💬</div><h3>Hemat Lebih Banyak!</h3><p>Dapatkan harga lebih murah dari server Discord kami.</p>
+<button class="btn-join" onclick="window.open('https://discord.gg/wHMRcR38D','_blank');closeDC()">💬 Join Discord</button>
+<button class="btn-skip" onclick="closeDC();openQR()">Lewati</button>
+</div></div>
+<div class="modal-bg" id="qr-modal"><div class="modal-box">
+<button class="modal-x" onclick="closeQR()">&times;</button>
+<h3>QRIS Payment</h3>
+<img src="qris.jpg" alt="QRIS NovX" class="qr">
+<div class="info"><p>Produk: <strong id="m-product">-</strong></p></div>
+<button class="btn-wa" onclick="window.open('https://wa.me/6281234567890','_blank')">📱 Kirim Bukti via WhatsApp</button>
+<p class="modal-note">Admin akan verifikasi manual.</p>
+</div></div>
+<script src="script.js"></script>
+</body>
+</html>
